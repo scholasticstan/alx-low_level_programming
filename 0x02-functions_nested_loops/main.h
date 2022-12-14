@@ -1,17 +1,16 @@
-#include <stdio.h>
+#ifndef IO_
+#define IO_
+int _putchar(char c);
+int _strlen(const char *s);
+ssize_t read_textfile(const char *filename, size_t letters);
+int create_file(const char *filename, char *text_content);
+int append_text_to_file(const char *filename, char *text_content);
+#endif
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
 
- int main(void)
- {
-   char str[1000];
-   int ch, i, n = 0;
-  
-   while ((ch = getchar()) != EOF && n < 1000)
-     str[n++] = ch;
-	   
-   for (i = 0; i < n; ++i)
-     putchar(str[i]);
-
-   putchar('\n'); /* trailing '\n' needed in Standard C */
-	
-   return 0;
- }
