@@ -1,1 +1,1 @@
-Low Level programming tasks
+Low Level programming tasks detail
